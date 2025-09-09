@@ -1,0 +1,6 @@
+pyspark
+iex-parser
+pandas
+numpy
+boto3
+snowflake-connector-python

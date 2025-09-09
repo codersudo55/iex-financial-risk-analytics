@@ -1,0 +1,9 @@
+pyspark
+pandas
+numpy
+dbt-core
+torch
+matplotlib
+iex-parser
+streamlit
+apache-airflow
