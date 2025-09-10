@@ -19,8 +19,8 @@ End-to-end financial risk analytics pipeline that ingests financial trades/trans
    python etl/spark_ingest.py
    ```
 
-3. Orchestrate full pipeline with Airflow (ETL → dbt → fraud scoring → dashboard).
+<!-- 3. Orchestrate full pipeline with Airflow (ETL → dbt → fraud scoring → dashboard). -->
 
-<!-- 3. For cloud-scale, move parsed CSV/Parquet into Snowflake and update configs accordingly. -->
+<!-- 4. For cloud-scale, move parsed CSV/Parquet into Snowflake and update configs accordingly. -->
 
 
