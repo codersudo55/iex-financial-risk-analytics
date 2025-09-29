@@ -1,14 +1,14 @@
-# Financial Risk Analytics Project
-Financial Risk Analytics
-Goal: Process 300GB of financial flat files (trades, transactions) into Snowflake.
-Tools: PySpark for ETL, Pandas/NumPy for financial calculations, dbt for fact tables.
-Add-on: PyTorch fraud detection model.
-Visualization: Risk exposure and fraud alerts dashboard.
+# Financial Risk Analytics and Trading Behavior using IEX Market Data
 
 ## Overview
-End-to-end financial risk analytics pipeline that ingests financial trades/transactions (~300GB), processes via PySpark, stores curated data in Snowflake, builds fact tables with dbt, applies a PyTorch-based fraud detection model, and visualizes exposures and fraud alerts via Streamlit dashboard.
+End-to-end financial risk analytics and trading behavior pipeline that ingests financial data (~300GB), processes via PySpark to obtain parsed trade_report files in AWS, builds fact tables with dbt, visualizes exposures and fraud alerts via Streamlit dashboard (and applies a PyTorch-based fraud detection model - optional).
 
 ## Workflow
+1. Download raw market data by date from IEX Market Data website. We specifically need data from TOPS_1_5 and TOPS_1_6 (I have collected data between 2016-12-12 to 2018-07-31):
+
+   ```bash
+   https://iextrading.com/trading/market-data/ 
+   ```
 1. Parse IEX TOPS .pcap.gz into CSV:
    ```bash
    python etl/parse_iex_tops.py --input data_feeds_xxx.pcap.gz --output data/raw/iex/parsed.csv
