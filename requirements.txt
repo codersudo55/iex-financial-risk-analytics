@@ -7,3 +7,7 @@ matplotlib
 iex-parser
 streamlit
 apache-airflow
+boto3
+pyathena
+pyarrow
+s3fs

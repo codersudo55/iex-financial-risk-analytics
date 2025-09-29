@@ -3,4 +3,6 @@ iex-parser
 pandas
 numpy
 boto3
-snowflake-connector-python
+pyathena
+pyarrow
+s3fs
